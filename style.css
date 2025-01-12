@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease-in-out; /* Optional: for smooth background transition */
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+/* In your style.css */
+.navbar-brand i {
+  margin-right: 0.5em; /* Add some space to the right of the icon */
+  font-size: 0.8em;    /* Adjust the size of the icon */
+  vertical-align: middle; /* Align the icon vertically with the text */
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: bold;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ddd !important;
+}
+
+/* Hero Section */
+/* In your style.css */
+
+/* Hero Section */
+/* In your style.css */
+
+/* Hero Section */
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero .container {
+  /* No need for position: relative or z-index here for this layout */
+}
+
+.hero .col-md-8 {
+  /* Text content is naturally aligned left in its column */
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  animation: slideIn 2s ease-in-out;
+}
+
+/* Style for the profile picture in the right column */
+.hero .col-md-4 img {
+  width: 100%; /* Make the image take full width of its column */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra spacing below the image */
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: #30734D;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.bg-dark .section h2 {
+  color: #fff;
+}
+
+/* Work Experience Section */
+.experience-item {
+  margin-bottom: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.experience-item h3 {
+  margin-bottom: 10px;
+  color: #30734D;
+}
+
+.bg-dark .experience-item h3 {
+  color: #fff;
+}
+
+/* Projects Section */
+#projects {
+  background: url('parallax-image.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#projects h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Research Publications Section */
+/* Styles remain mostly the same, Bootstrap provides good defaults */
+
+/* Footer */
+/* Footer */
+footer {
+  background: #333; /* Orange using RGB */
+  color: #fff;
+  text-align: center;
+  padding: 120px 0;
+}
+
+
+footer .social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Custom adjustments for responsiveness can be added here if needed */
